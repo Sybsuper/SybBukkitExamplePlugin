@@ -1,0 +1,17 @@
+# Default values for your config.
+spamMessage: "&6&lYOU ARE SUPER"
+stringValue: "my name"
+intValue: 1
+doubleValue: 1.0
+listMethodOne: ["1","2","3"]
+listMethodTwo:
+  - "1"
+  - "2"
+  - "3"
+complexList:
+  - objecthere:
+      name: "i forgor"
+path1:
+  path2:
+    path3:
+      farValue: "I am soooooo far"

@@ -1,0 +1,19 @@
+main: com.sybsuper.SybBukkitExamplePlugin.Main # required
+name: SybBukkitExamplePlugin # required
+version: 1.0.0 # required
+author: Sybsuper
+website: https://sybsuper.com/
+description: An example plugin with useful BukkitAPI examples.
+commands: # register commands here
+  examplecommand: # create /examplecommand for this plugin, an alternative syntax is /SybBukkitExamplePlugin:examplecommand
+    aliases: # alternative commands that will run this command
+      - sybexamplecommand
+      - examplecmd
+    description: An example command. # description shown if you run /help <commandname> or in custom help gui's.
+    usage: /examplecommand <required parameter> [optional parameter=default value] # this is only shown if the onCommand method returns false.
+    permission: sybbukkitexampleplugin.examplecommand # permission required to run the command
+    permission-message: You do not have permission to execute this command. # probably don't want to set this and show the default permission message instead.
+permissions: # useful for admins that have to setup permissions, permission plugins use this part of the config.
+  sybbukkitexampleplugin.examplecommand:
+    description: Run /examplecommand # describe the permission.
+    default: op # only operators can use this command by default.
